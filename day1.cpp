@@ -16,18 +16,36 @@
     
 // }
 
+// #include <iostream>
+// using namespace std;
+
+// int globalVariable = 100;
+
+
+// int main(){
+//     // local variable//
+//     int userInput;
+//     cin >> userInput;
+//     float result = (double)globalVariable / userInput;
+//     cout << result << endl;
+//     return 0;
+    
+// }
+
+
 #include <iostream>
 using namespace std;
 
-int globalVariable = 100;
-
-
-int main(){
-    // local variable//
-    int userInput;
-    cin >> userInput;
-    float result = (double)globalVariable / userInput;
-    cout << result << endl;
-    return 0;
-    
-}
+ int main(){
+      int side1, side2, side3;
+      cin >> side1 >> side2 >> side3;
+      
+      
+      bool isEqui = (side1 > 0) && (side1 == side2) && (side2 == side3);
+      
+      cout << isEqui << endl;
+      return 0;
+      
+      
+      
+ }
