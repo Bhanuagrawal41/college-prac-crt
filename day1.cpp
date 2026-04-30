@@ -49,3 +49,61 @@ using namespace std;
       
       
  }
+
+// swap values of 2 var using the thrid variable temp;///
+// #include <iostream>
+// using namespace std;
+
+//  int main(){
+    
+//      int a, b;
+     
+//      cin >> a >> b;
+     
+      
+      
+//       int temp = a;
+//       a = b;
+//       b = temp;
+      
+//       cout << a << " \n" << b << endl;
+//       return 0;
+
+
+// finding the area of shapes -----//
+
+
+#include <iostream>
+using namespace std;
+
+int main(){
+    
+     int choice;
+     cin >> choice;
+     
+     if (choice == 1){
+         double radius;
+         cin >> radius ;
+         cout << 3.14 * radius * radius << endl;
+     }
+     else if (choice == 2){
+         double lenght, breadth;
+         cin >>   lenght >> breadth;
+         cout <<  lenght * breadth << endl;
+     }
+      else if ( choice == 3){
+           double base, height;
+           cin >> base >> height;
+           cout << 0.5 * base * height << endl;
+           
+      } else{
+          cout << "invalid input" << endl;
+      }
+      return 0;
+    
+    
+    
+    
+    
+    
+}
