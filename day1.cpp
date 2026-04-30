@@ -1,17 +1,33 @@
 // Temprature Conversion 
 // Take input in the form of Celcius and convert it into fahrenheit...
 
-#include<iostream>
+// #include<iostream>
+// using namespace std;
+
+// int main(){
+    
+//     double celcius;
+//     double fahrenheit;
+//     cin >> celcius;
+//     fahrenheit = (celcius * 9.0 / 5.0) + 32.0;
+//     cout << fahrenheit << endl;
+    
+//     return 0;
+    
+// }
+
+#include <iostream>
 using namespace std;
 
+int globalVariable = 100;
+
+
 int main(){
-    
-    double celcius;
-    double fahrenheit;
-    cin >> celcius;
-    fahrenheit = (celcius * 9.0 / 5.0) + 32.0;
-    cout << fahrenheit << endl;
-    
+    // local variable//
+    int userInput;
+    cin >> userInput;
+    float result = (double)globalVariable / userInput;
+    cout << result << endl;
     return 0;
     
 }
