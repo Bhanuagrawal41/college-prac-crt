@@ -107,3 +107,32 @@ int main(){
     
     
 }
+
+
+
+
+// avg of three no //
+ #include <iostream>
+ using namespace std;
+ 
+  int main(){
+      int choice;
+      cin >> choice;
+      int a , b ,c;
+      cin >> a >> b >> c;
+      
+      
+      
+      if(choice == 1){
+          int sum = a + b + c;
+         cout << sum << endl;
+      
+      } 
+      
+      else if(choice == 2){
+          int avg = (a+b+c)/3;
+          cout << avg << endl;
+      }else{
+          cout << "invalid input" << endl;      }
+  }
+
