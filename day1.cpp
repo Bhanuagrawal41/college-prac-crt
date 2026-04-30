@@ -136,3 +136,20 @@ int main(){
           cout << "invalid input" << endl;      }
   }
 
+#include <iostream>
+using namespace std;
+
+int main(){
+    const int userid = 41;
+    const int password = 456;
+    
+    int id , inputpassword;
+    cout << "enter your userid and password" << endl;
+    cin >> id >> inputpassword;
+    
+    bool isgranted = (userid == id) && (password == inputpassword);
+    cout << "access granted" << isgranted << endl;
+    cout << "acess deinied" << !isgranted << endl;
+    return 0;
+    
+}
