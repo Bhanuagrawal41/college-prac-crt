@@ -53,6 +53,21 @@ int main(){
    }
     
 }
+#include <iostream>
+using namespace std;
+
+int main (){
+    int a, b;
+    int max_number;
+    
+    cin >> a >> b;
+    //ternary operator
+    max_number = (a > b)? a : b;
+    
+    cout << max_number;
+    return 0;
+    
+}
 
 
 
