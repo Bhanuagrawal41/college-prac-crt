@@ -68,6 +68,33 @@ int main (){
     return 0;
     
 }
+// problem no 6 --- break statement---//
+//we have to add number until we get a negative numer //
+
+#include <iostream>
+using namespace std;
+
+int main (){
+    int n;
+    int sum = 0;
+    
+    
+    
+    while(true){
+        cin >> n;
+        
+        if(n < 0){
+            break;
+        }
+         sum = sum + n;
+         
+        
+    }
+    cout << sum ;
+    return 0;
+    
+    
+}
 
 
 
