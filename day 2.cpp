@@ -96,6 +96,40 @@ int main (){
     
 }
 
+#include <iostream>
+using namespace std;
+
+int main(){
+    string dayOrNight;
+    bool motion;
+    
+    cout << "is it day or night? : ";
+    cin >> dayOrNight;
+    
+    cout << " Is motion detected";
+    cin >> motion;
+    
+    
+    if((dayOrNight == "Night") || (dayOrNight == "night")){
+        if(motion){
+            cout << "turn on the light with 100% brightness";
+        }else{
+            cout << "turn on the light with the 10 %  perentage of light";
+        }
+    }
+   else if((dayOrNight == "Day") || (dayOrNight == "day")){
+        cout << "turn off the light";
+    }
+    
+    else{
+        cout << "invalid statement---";
+    }
+    
+    
+    return 0;
+    
+}
+
 
 
 
