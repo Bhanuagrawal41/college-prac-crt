@@ -131,6 +131,37 @@ int main(){
 }
 
 
+#include <iostream>
+using namespace std;
+
+int main(){
+    
+    int choice;
+    cin >> choice;
+    
+    switch(choice) {
+        case 1:
+        cout << "Trnaffering call to the customer support ";
+         break;
+        case 2:
+        cout << "we are pritning the bill Trnaffering the call tho the finnance department";
+         break;
+        case 3:
+        cout << "we are connecting to the techincal desk plz wait";
+         break;
+        case 4:
+        cout << "we tranffering call to our agent";
+         break;
+        
+        
+        default:
+        cout << "It's invalid selection , enter a valid number";
+        
+       
+    }
+    return 0;
+
+
 
 
 
