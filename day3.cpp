@@ -95,3 +95,48 @@ int main()
 }
 
 
+// PROBLEM NO 8 FIBONACCHI SERIES ---///
+
+// #include <iostream>
+// using namespace std;
+// int main (){
+//     int n;
+//     cin >> n;
+//     int a = 0;
+//     int b = 1;
+    
+//     for(int  i = 0; i <n; i++){
+        
+//     }
+
+// problem no 9 prime no check ??-------//
+
+#include <iostream>
+using namespace std;
+
+int main (){
+    int n;
+    cin >> n;
+    
+    bool isprime = true;
+    if(n < 2){
+        isprime = false;
+    }else{
+    for(int i= 2; i < n; i++){
+        if(n % i == 0 ) {
+            
+            isprime = false;
+            break;
+        }
+    }
+    }  
+    if (isprime){
+        cout << "this is the prime no ";
+    }else{
+        cout << "not a prime no";
+    }
+    return 0;
+
+}
+
+
