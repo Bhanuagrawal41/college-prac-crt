@@ -139,4 +139,15 @@ int main (){
 
 }
 
+#include <iostream>
+using namespace std;
+int password;
+
+
+do{
+    cout << "enter the password";
+    cin >> password;
+}while(password != 1234);
+cout << "phone unlocked" ;
+return 0;
 
