@@ -51,3 +51,22 @@ int main(){
     }
     return 0;
 }
+
+#include <iostream>
+using namespace std;
+int main(){
+    int n;
+    cin >> n;
+    
+    for(int i = 1; i<=n; i++){ // this loops define no of rows in the pattern
+        for(int j = n-i; j>=1; j--){
+            cout << " ";    // this will define the no of spaces in the program
+        }
+        
+        for(int k = 1 ; k <= i; k++ ){ // this will define the no of stars in the program
+            cout << "*";
+        }
+        cout << endl;
+    }
+    return 0;
+}
