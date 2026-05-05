@@ -33,3 +33,20 @@ int main(){
     printMessage();
     return 0;
 }
+
+//-----problem 3----//
+//making a function with argument and return type -//
+
+#include <iostream>
+using namespace std;
+
+int area(int a, int b){
+    return a*b;
+    
+}
+int main(){
+    int length = 10;
+    int breadth = 5;
+    int areaofrecatangle = area(breadth, length);
+    cout << areaofrecatangle;
+}
