@@ -49,4 +49,64 @@ int main(){
     int breadth = 5;
     int areaofrecatangle = area(breadth, length);
     cout << areaofrecatangle;
-}
+}// problem 4 
+// types of functions//
+//4.1 -- no argumetn and no return type //
+
+
+// #include <iostream>
+// using namespace std;
+
+// void doorbell(){
+//     cout << "ting tong";
+// }
+// int main(){
+//     doorbell();
+//     return 0;
+// }
+
+
+// // 4.2 argumetn , no return type--//
+// #include <iostream>
+// using namespace std;
+
+
+// void sendtext(string message){
+//     cout << message;
+// }
+// int main(){
+//     sendtext("Bjp wons ...");
+//     return 0;
+// }
+
+
+// 4.3 no argument but return type ---------//
+
+
+
+// #include <iostream>
+// using namespace std;
+
+// int tickteNumber(){
+//     return 101;
+// }
+
+// int main(){
+//     cout << tickteNumber();
+//     return 0;
+// }
+
+
+
+//4.4 argument and return type //
+#include <iostream>
+using namespace std;
+
+ int currencyConversion(int amountInUsd){
+     return amountInUsd/100;
+ }
+ int main(){
+     cout << currencyConversion(1000) << "dolars";
+     return 0;
+ }
+
