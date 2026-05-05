@@ -21,3 +21,15 @@ int main(){
     }
   return 0;
 }
+//--problem ----2//
+// Function declaration and initllization
+
+#include <iostream>
+using namespace std;
+void printMessage(){
+    cout << "hi i am learning Function";
+}
+int main(){
+    printMessage();
+    return 0;
+}
