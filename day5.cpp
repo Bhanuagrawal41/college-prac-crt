@@ -139,4 +139,25 @@ int main(){
     return 0;
 }
 
+\
+#include <iostream>
+using namespace std;
+
+int main(){
+    int houseno = 4;
+    int *house = &houseno;
+    
+    
+    cout << houseno << endl;
+    cout << house << "\n";
+    cout << *house << endl;
+    
+    
+    
+    *house = 28;
+    
+    cout << *house;
+    
+}
+
 
