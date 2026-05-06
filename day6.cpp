@@ -120,3 +120,44 @@
 //     updatebyRefrence(original);
 //     cout << original;
 // }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//--- problem --3
+/// call by value // photcopy
+// call by reference 
+
+
+
+
+#include <iostream>
+using namespace std;
+
+int billcalc(int n){
+    int totalbill = n*40;
+    std::cout <<"your total bill is"<< totalbill << std::endl;
+    return 0;
+}
+
+
+
+ int main(){
+     billcalc(5);
+ }
