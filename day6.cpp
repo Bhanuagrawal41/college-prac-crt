@@ -161,3 +161,36 @@ int billcalc(int n){
  int main(){
      billcalc(5);
  }
+
+
+
+
+//*******************************************************************************/// prtice problem 6
+#include <iostream>
+using namespace std;
+class Student{
+public:
+   string name;
+   int age;
+    
+    
+    void introduction(){
+        cout << "hi there, this person name is " << name  << "and his age is " << age << endl;
+    }
+    
+};
+
+
+
+
+
+int main()
+{
+    Student s1;
+    s1.name = "Bhanu agrwal";
+    s1.age = 20;
+    s1.introduction();
+    
+
+    return 0;
+}
