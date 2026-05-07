@@ -104,3 +104,45 @@ int main(){
     Student sd1("bhanu",41);
     sd1.printdetail();
 }
+
+
+ #include <iostream>
+ using namespace std;
+ 
+ 
+ class BankAccount{
+    private:
+    int balance;
+    public:
+    void setBalance(int amount){
+        if(amount >= 0){
+            balance = amount;
+        }else{
+            cout << "Enter a valid number ....";
+            
+        }
+    }
+    
+    
+    public:
+    int getbalance(){
+        return balance;
+    }
+   
+     
+     
+ };
+
+
+
+
+
+int main(){
+    BankAccount obj1;
+    obj1.setBalance(3200);
+    cout << obj1.getbalance();
+    
+}
+
+
+
