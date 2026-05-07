@@ -45,3 +45,34 @@
 //     obj1.accesofSecreatecode();
 // }
 
+#include <iostream>
+using namespace std;
+
+class wificonection{
+    public:
+   string networkName;
+    string password;
+   
+   // constructors
+   
+   wificonection(){
+       networkName = "actfiber";
+       password = "bjp wins";
+   }
+   
+   public:
+    void showdetails(){
+       cout << "network name is : " << networkName << " and its password is : "<< password;
+   }
+};
+
+
+
+
+
+int main()
+
+{
+    wificonection obj1;
+    obj1.showdetails();
+}
