@@ -76,3 +76,31 @@ int main()
     wificonection obj1;
     obj1.showdetails();
 }
+
+
+#include <iostream>
+using namespace std;
+ class Student{
+public :
+  string name;
+  int id;
+  
+  // constructors
+  Student(string Nmee, int myid){
+      name = Nmee;
+      id = myid;
+  }
+  public:
+  void printdetail(){
+      cout << name << id;
+  }
+  
+  
+  
+};
+
+
+int main(){
+    Student sd1("bhanu",41);
+    sd1.printdetail();
+}
