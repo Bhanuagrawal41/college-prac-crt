@@ -88,3 +88,43 @@ int main(){
     
     
 }
+
+// problem -3 heirarchial - inheritance ---/
+
+#include <iostream>
+using namespace std;
+
+class Vehicle{
+    public:
+    void Start(){
+        cout << "vehicle startts : " << endl;
+    }
+};
+
+class Bike : public Vehicle{
+    public:
+   void run(){
+        cout << "bike is running" << endl;
+   }
+};
+
+
+class Car : public Vehicle{
+    public:
+   void run1(){
+        cout << "car is running "<< endl;
+   }
+};
+
+
+
+int main(){
+    Bike b1;
+    b1.Start();
+    b1.run();
+    
+    Car c1;
+    c1.Start();
+    c1.run1();
+    
+}
