@@ -211,5 +211,38 @@ int main(){
     obj1.show();
 }
 
-
+#include <iostream>
+using namespace std;
+ 
+ 
+ class Multi{
+     public:
+     void mutiple(){
+         cout << "enter the no "<< endl;
+     }
+     
+     void mutiple(int n, int b){
+         cout << n*b << endl;
+         
+     }
+     void mutiple(double n, double b){
+         cout << n*b << endl;
+         
+     }
+     
+     void mutiple(int n,int b, int c){
+         cout << n*b*c << endl;
+     }
+     void mutiple(double n, double b, double c){
+         cout << n*b*c << endl;     }
+ };
+ 
+ int main(){
+     Multi m1;
+     m1.mutiple(4,5);
+     m1.mutiple(4.5, 5.6);
+     m1.mutiple(4, 5, 6);
+     m1.mutiple(4.2, 2.6, 5.6);
+     
+ }
 
