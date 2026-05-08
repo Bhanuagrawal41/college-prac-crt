@@ -127,4 +127,89 @@ int main(){
     c1.Start();
     c1.run1();
     
+}/ mutiple -- inehritacn3e aand important inheritance--//
+
+// #include <iostream>
+// using namespace std;
+
+
+// class Parent1{
+//     void giveMeMoney(){
+//         cout << "give me my money" << endl;
+//     }
+
+    
+    
+// };
+
+// class Parent2{
+//     void giveMeMoney(){
+//         cout << "give me my money please" << endl;
+//     }
+    
+// };
+
+// class Child : public Parent1, public Parent2{
+    
+    
+// };
+
+
+
+
+// int main(){
+//     Child c1;
+//     c1.Parent1::giveMeMoney();
+//     c1.parent2::giveMeMoney();
+    
+    
+    
+// }
+
+// diamond problem //
+
+// hybrid inheritance//
+#include <iostream>
+using namespace std;
+
+
+class A{
+    public:
+    void print(){
+        cout << "bjp wons" << endl;
+    }
+};
+
+
+class B :  virtual public A{
+    // no logic--//
+    public:
+    void virtual show(){
+        cout << "pint" << endl;
+    }
+};
+
+
+class C : virtual public A{
+    // no logic--//
+    public:
+    void virtual show(){
+        cout << "pint" << endl;
+    }
+};
+
+
+class D : public B, public C{
+    
+};
+
+
+
+int main(){
+    D obj1;
+    obj1.print();
+    obj1.show();
 }
+
+
+
