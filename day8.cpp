@@ -246,3 +246,43 @@ using namespace std;
      
  }
 
+#include <iostream>
+using namespace std;
+
+class Animal{
+    public:
+     virtual void sound(){
+        cout <<  "Animal makes sound" << endl;
+    }
+    
+};
+
+class Dog : public Animal{
+    public:
+    void sound() {
+        cout << "dog makes a sound "<< endl;
+    }
+    
+    
+};
+
+class Cat : public Animal{
+    public:
+    
+    void sound(){
+        cout << "cat makes a sound " << endl;
+    }
+    
+};
+
+
+
+
+int main(){
+    Dog d;
+    Cat c;
+    d.sound();
+    c.sound();
+}
+
+
