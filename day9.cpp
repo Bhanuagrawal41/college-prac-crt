@@ -156,3 +156,29 @@ int main(){
     
 }
 
+
+// problem ---5
+// lenear search--//
+#include <iostream>
+using namespace std;
+
+int LinearSearch(int arr[], int size, int targetValue){
+    for(int i = 0; i< size; i++){
+        if(arr[i] == targetValue){
+            return i;
+        }
+    }
+    return -1;
+}
+
+
+
+
+
+int main(){
+        int arr[] = {10, 20, 30, 40, 50,};
+     
+ int targeIndex =    LinearSearch(arr, 5, 20);
+    cout << targeIndex;
+}
+
