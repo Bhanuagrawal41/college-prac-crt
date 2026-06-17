@@ -56,3 +56,30 @@ class Solution {
         
     }
 }
+
+
+class Solution {
+    public int maxSubarraySum(int[] arr, int k) {
+        // Code here
+        int max_sum = Integer.MIN_VALUE;
+        int curr_sum = 0;
+        int i = 0;
+        int j = 0;
+        
+        while(j < arr.length){
+            curr_sum += arr[j];
+            if(j-i+1 < k){
+                j++;
+            }
+            else if(j-i+1 == k){
+                max_sum = Math.max(max_sum,curr_sum);
+                 curr_sum -= arr[i];
+                
+                j++;
+                i++;
+               
+            }
+        }
+        return max_sum;
+    }
+}
